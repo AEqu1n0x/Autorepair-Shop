@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <style>
+        body {
+        background: black url(https://phonoteka.org/uploads/posts/2022-01/1643147661_35-phonoteka-org-p-chernii-fon-dlya-saita-36.jpg); /* Цвет фона и путь к файлу */
+        color: #fff; /* Цвет текста */
+       }
+       </style>
+  <link rel="stylesheet" href="css/request.css">
+  <link rel="stylesheet" href="css/shapka.css">
+  <link rel="stylesheet" href="css/block.css">
+</head>
+
+
+<header>
+    <div class="wrap-logo">
+    <a href="/main" class="logo">СТО "Каракатое и киви"</a>
+    </div>
+    <nav>
+      <a href="/main">Главная</a>
+      <a class="active" href="/request">Оставить заявку</a>
+      <a href="/price">Цены</a>
+      <a href="/contacts">Контакты</a>
+      <a href="/about">О нас</a>
+      <a href="tel:+79234103444">8 (923) 410-34-44</a>
+    </nav>
+  </header>
+
+<body>
+    <div class="container">  
+        <form id="contact" action="http://localhost:3001/request" method="POST">
+          <h3>Оставьте вашу заявку!</h3>
+          <h4>Наши специалисты свяжутся с Вами в ближайшее время</h4>
+          <fieldset>
+            <input name="name" id="name" placeholder="Введите ваше имя" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input name="phone" id="phone" placeholder="Введите ваш телефон" type="tel" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input name="email" id="email" placeholder="Введите вашу почту" type="email" tabindex="3">
+          </fieldset>
+          <h4>Выберите проблему которая вас интересует</h4>
+          <div class="select">
+            <select name="problem">
+              <option value="ДВС">ДВС</option>
+              <option value="Трансмиссия">Трансмиссия</option>
+              <option value="Кузовные работы">Кузовные работы</option>
+              <option value="Техническое обслуживание">Тех. обслуживание</option>
+              <option value="Подвеска">Подвеска</option>
+              <option value="Диагностика">Диагностика</option>
+              <option value="Прочее">Прочее</option>
+            </select>
+          </div>
+          <br>
+          <fieldset>
+            <textarea name="text" id="text" placeholder="Опишите вашу проблему" tabindex="5"></textarea>
+          </fieldset>
+          <fieldset>
+            <button  type="submit" id="contact-submit">Отправить заявку</button>
+          </fieldset>
+        </form>
+      </div>
+
+<script src="proverkarequset.js">  </script> 
+        
+<div class="footer"> Сайт создан Егоровым Андреем в рамках учебной практики. </div>
+</body>
+</html>

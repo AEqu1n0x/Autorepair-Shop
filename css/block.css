@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.centr {
+    text-align:  center;
+   }
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1500px;
+	width:100%;
+
+}
+
+.card {
+    background: black;
+    width: 320px;
+    height: 430px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 220px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.pic-2 {
+    background-image: url(https://auto.today/media/res/6/7/1/9/2/67192.pvwu70.1280.jpg);
+}
+
+.pic-3 {
+    background-image: url(https://kuzov.planeta-avto.ru/wp-content/uploads/2017/07/%D0%BA%D1%83%D0%B7%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9.jpg);
+}
+
+.pic-4 {
+    background-image: url(https://pravpunkt.ru/upload/iblock/d37/d37188611a1a9d405966997683e0b4c2.jpg);
+}
+
+.card h2 {
+    padding: 10px;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.card:hover {
+    background-color: #e41111;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+
+
+
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .slider {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 10px;
+        overflow: hidden;
+        text-align:  center;
+    }
+    
+    .slider__slides {
+      width: 100%;
+      padding-top: 66%;
+      text-align:  center;
+    }
+    
+    .slider__slide {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bold;   
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        opacity: 0;
+        text-align:  center;
+        padding: 10px;
+    }
+    
+    .slider__slide.active {
+        opacity: 1;
+    }
+    
+    .slider__slide img {
+      width: 100%;
+    }
+    
+    .slider__nav-button {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        
+        opacity: .8;
+        cursor: pointer;
+    }
+    
+    #nav-button--prev {
+        top: 50%;
+        left:0;
+      
+        transform: translateY(-50%);
+    }
+    
+    #nav-button--next {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    
+    #nav-button--prev::after,
+    #nav-button--next::after {
+        content: "";
+        position: absolute;
+        border: solid #e41111;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 3px;
+        width: 40%;
+        height: 40%;
+    }
+    
+    #nav-button--next::after{
+        top: 50%;
+        right: 50%;
+        transform: translate(25%, -50%) rotate(-45deg);
+    }
+    
+    #nav-button--prev::after {
+        top: 50%;
+        right: 50%;
+        transform: translate(75%, -50%) rotate(135deg);
+    }
+    
+    .slider__nav {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .slider__navlink {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 1px #e41111;
+        background-color: #333;
+        opacity: 1;
+        margin: 0 10px 0 10px;
+        cursor: pointer;
+    }
+    
+    .slider__navlink.active {
+        background-color: #e41111;
+        border: 1px #333 solid;
+    }
+    
+    
+    @media screen and (max-width: 640px) {
+      .slider__nav-button {
+        height: 40px;
+        width: 40px;
+      }
+      .slider__navlink {
+        height: 12px;
+        width: 12px;
+      }
+    }

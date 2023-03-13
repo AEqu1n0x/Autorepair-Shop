@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.centr {
+    text-align:  center;
+   }
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1500px;
+	width:100%;
+
+}
+
+.card {
+    background: black;
+    width: 320px;
+    height: 430px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 220px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.pic-2 {
+    background-image: url(https://auto.today/media/res/6/7/1/9/2/67192.pvwu70.1280.jpg);
+}
+
+.pic-3 {
+    background-image: url(https://kuzov.planeta-avto.ru/wp-content/uploads/2017/07/%D0%BA%D1%83%D0%B7%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9.jpg);
+}
+
+.pic-4 {
+    background-image: url(https://pravpunkt.ru/upload/iblock/d37/d37188611a1a9d405966997683e0b4c2.jpg);
+}
+
+.card h2 {
+    padding: 10px;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.card:hover {
+    background-color: #e41111;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+
+  .myframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    }
